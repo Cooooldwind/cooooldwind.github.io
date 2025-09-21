@@ -76,6 +76,21 @@
       </tags>
   </entry>
   <entry>
+    <title>CooooldWind_の试炼历程 (2)</title>
+    <url>/2023_10_14_Growing_2/</url>
+    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
+<h2 id="做个P3955。"><a href="#做个P3955。" class="headerlink" title="做个P3955。"></a>做个<a class="link" href="https://www.luogu.com.cn/problem/P3955">P3955</a>。</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>思路大概就是先把东西存起来（<del>这不是废话？</del>）</p>
+<p>然后搞个很大（小）的数组</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">reader</span>{</span><br><span class="line">	<span class="type">int</span> need;</span><br><span class="line">	<span class="type">int</span> l;</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	reader r[<span class="number">1010</span>];</span><br><span class="line">	<span class="type">int</span> books[<span class="number">1010</span>];</span><br><span class="line">	<span class="type">int</span> n,q;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; q;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++)cin &gt;&gt; books[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; q;i++)cin &gt;&gt; r[i].l &gt;&gt; r[i].need;</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> m[<span class="number">8</span>]={<span class="number">1</span>,<span class="number">10</span>,<span class="number">100</span>,<span class="number">1000</span>,<span class="number">10000</span>,<span class="number">100000</span>,<span class="number">1000000</span>,<span class="number">10000000</span>};</span><br><span class="line">	<span class="built_in">sort</span>(books,books + n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; q;i++){</span><br><span class="line">		<span class="type">int</span> a = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; n;j++){</span><br><span class="line">			<span class="type">int</span> g = books[j] % m[r[i].l];</span><br><span class="line">			<span class="keyword">if</span>(g == r[i].need){</span><br><span class="line">				a = books[j] ;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	}</span><br><span class="line">} </span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
+      <tags>
+        <tag>题解</tag>
+        <tag>CooooldWind_の试炼历程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CooooldWind_の试炼历程 (1)</title>
     <url>/2023_10_14_Growing_1/</url>
     <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
@@ -123,40 +138,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CooooldWind_の试炼历程 (2)</title>
-    <url>/2023_10_14_Growing_2/</url>
-    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
-<h2 id="做个P3955。"><a href="#做个P3955。" class="headerlink" title="做个P3955。"></a>做个<a class="link" href="https://www.luogu.com.cn/problem/P3955">P3955</a>。</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>思路大概就是先把东西存起来（<del>这不是废话？</del>）</p>
-<p>然后搞个很大（小）的数组</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">reader</span>{</span><br><span class="line">	<span class="type">int</span> need;</span><br><span class="line">	<span class="type">int</span> l;</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	reader r[<span class="number">1010</span>];</span><br><span class="line">	<span class="type">int</span> books[<span class="number">1010</span>];</span><br><span class="line">	<span class="type">int</span> n,q;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; q;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++)cin &gt;&gt; books[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; q;i++)cin &gt;&gt; r[i].l &gt;&gt; r[i].need;</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> m[<span class="number">8</span>]={<span class="number">1</span>,<span class="number">10</span>,<span class="number">100</span>,<span class="number">1000</span>,<span class="number">10000</span>,<span class="number">100000</span>,<span class="number">1000000</span>,<span class="number">10000000</span>};</span><br><span class="line">	<span class="built_in">sort</span>(books,books + n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; q;i++){</span><br><span class="line">		<span class="type">int</span> a = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; n;j++){</span><br><span class="line">			<span class="type">int</span> g = books[j] % m[r[i].l];</span><br><span class="line">			<span class="keyword">if</span>(g == r[i].need){</span><br><span class="line">				a = books[j] ;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	}</span><br><span class="line">} </span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>算法竞赛</category>
-      </categories>
-      <tags>
-        <tag>题解</tag>
-        <tag>CooooldWind_の试炼历程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CooooldWind_の试炼历程 (4)</title>
-    <url>/2023_10_14_Growing_4/</url>
-    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
-<h2 id="是的我又来了（"><a href="#是的我又来了（" class="headerlink" title="是的我又来了（"></a>是的我又来了（</h2><p>这里是<a class="link" href="https://www.luogu.com.cn/problem/P1394">P1394</a>的题解。</p>
-<p>当时做这题主要是因为是fj的（自豪</p>
-<h6 id="广告：博客食用更香"><a href="#广告：博客食用更香" class="headerlink" title="广告：博客食用更香"></a>广告：<a class="link" href="https://www.luogu.com.cn/blog/747369/ColdWind-Growing-4">博客食用更香</a></h6><hr>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>输入并判断这水怎么流的，然后一个个去查能不能到就好了。</p>
-<p>那就打个三重循环？？？</p>
-<p><strong>为什么打三重循环</strong>：有水能从不是起点的地方流到自己那里去（比如起点在8,8到5有路，5到3有路，那么8，5，3都有水）</p>
-<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,h[<span class="number">500</span>],road[<span class="number">500</span>][<span class="number">500</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) cin &gt;&gt; h[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; m;i++){</span><br><span class="line">		<span class="type">int</span> f,t;</span><br><span class="line">		cin &gt;&gt; f &gt;&gt; t;</span><br><span class="line">                <span class="comment">//高处？低处？</span></span><br><span class="line">		<span class="keyword">if</span>(h[f] &gt; h[t]) road[f][t] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(h[t] &gt; h[f]) road[t][f] = <span class="number">1</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++){</span><br><span class="line">		road[i][i] = <span class="number">1</span>;<span class="comment">//水在自己家</span></span><br><span class="line">		<span class="type">int</span> judge = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>;j &lt;= n;j++)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>;k &lt;= n;k++){</span><br><span class="line">				<span class="keyword">if</span>(road[k][j]){<span class="comment">//有路，则为1</span></span><br><span class="line">					judge++;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				}</span><br><span class="line">			}		</span><br><span class="line">		<span class="keyword">if</span>(judge == n){</span><br><span class="line">			cout &lt;&lt; <span class="string">"Oui, j'ai trouve la solution."</span> &lt;&lt; endl &lt;&lt; i;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		}</span><br><span class="line">		road[i][i] = <span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">	cout &lt;&lt; <span class="string">"Non"</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>算法竞赛</category>
-      </categories>
-      <tags>
-        <tag>题解</tag>
-        <tag>CooooldWind_の试炼历程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CooooldWind_の试炼历程 (5)</title>
     <url>/2023_10_14_Growing_5/</url>
     <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
@@ -173,25 +154,6 @@
 <p>没了。</p>
 <p>很多东西花点心思就能理解，注释也有提示的。</p>
 <p>一天更两期真的累（T_T</p>
-]]></content>
-      <categories>
-        <category>算法竞赛</category>
-      </categories>
-      <tags>
-        <tag>题解</tag>
-        <tag>CooooldWind_の试炼历程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CooooldWind_の试炼历程 (7)</title>
-    <url>/2023_10_14_Growing_7/</url>
-    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
-<h2 id="这里是P1097的题解"><a href="#这里是P1097的题解" class="headerlink" title="这里是P1097的题解"></a>这里是<a class="link" href="https://www.luogu.com.cn/problem/P1097">P1097</a>的题解</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>排序，计数输出。</p>
-<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> n,m,t[<span class="number">150000001</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++) std::cin &gt;&gt; t[i];</span><br><span class="line">	std::<span class="built_in">sort</span>(t,t + n);<span class="comment">//排序</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++){</span><br><span class="line">		<span class="type">int</span> get = t[i],time = <span class="number">1</span>,j = i;</span><br><span class="line">		<span class="keyword">while</span>(t[i] == t[j]) j++;<span class="comment">//计数，j是最后一个出现这数字的地方</span></span><br><span class="line">		std::cout &lt;&lt; get &lt;&lt; <span class="string">" "</span> &lt;&lt; j - i &lt;&lt; endl;</span><br><span class="line">		i = j - <span class="number">1</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
-<p>连namespace都压。</p>
-<p><strong>14行搞定</strong>此题。</p>
-<p>(之前用结构体80分的是谁，我不说</p>
-<p>(就是我</p>
 ]]></content>
       <categories>
         <category>算法竞赛</category>
@@ -245,6 +207,44 @@
 <hr>
 <p>有用？点个赞再走吧</p>
 ]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
+      <tags>
+        <tag>题解</tag>
+        <tag>CooooldWind_の试炼历程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CooooldWind_の试炼历程 (7)</title>
+    <url>/2023_10_14_Growing_7/</url>
+    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
+<h2 id="这里是P1097的题解"><a href="#这里是P1097的题解" class="headerlink" title="这里是P1097的题解"></a>这里是<a class="link" href="https://www.luogu.com.cn/problem/P1097">P1097</a>的题解</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>排序，计数输出。</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> n,m,t[<span class="number">150000001</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++) std::cin &gt;&gt; t[i];</span><br><span class="line">	std::<span class="built_in">sort</span>(t,t + n);<span class="comment">//排序</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n;i++){</span><br><span class="line">		<span class="type">int</span> get = t[i],time = <span class="number">1</span>,j = i;</span><br><span class="line">		<span class="keyword">while</span>(t[i] == t[j]) j++;<span class="comment">//计数，j是最后一个出现这数字的地方</span></span><br><span class="line">		std::cout &lt;&lt; get &lt;&lt; <span class="string">" "</span> &lt;&lt; j - i &lt;&lt; endl;</span><br><span class="line">		i = j - <span class="number">1</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+<p>连namespace都压。</p>
+<p><strong>14行搞定</strong>此题。</p>
+<p>(之前用结构体80分的是谁，我不说</p>
+<p>(就是我</p>
+]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
+      <tags>
+        <tag>题解</tag>
+        <tag>CooooldWind_の试炼历程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CooooldWind_の试炼历程 (4)</title>
+    <url>/2023_10_14_Growing_4/</url>
+    <content><![CDATA[<h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
+<h2 id="是的我又来了（"><a href="#是的我又来了（" class="headerlink" title="是的我又来了（"></a>是的我又来了（</h2><p>这里是<a class="link" href="https://www.luogu.com.cn/problem/P1394">P1394</a>的题解。</p>
+<p>当时做这题主要是因为是fj的（自豪</p>
+<h6 id="广告：博客食用更香"><a href="#广告：博客食用更香" class="headerlink" title="广告：博客食用更香"></a>广告：<a class="link" href="https://www.luogu.com.cn/blog/747369/ColdWind-Growing-4">博客食用更香</a></h6><hr>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>输入并判断这水怎么流的，然后一个个去查能不能到就好了。</p>
+<p>那就打个三重循环？？？</p>
+<p><strong>为什么打三重循环</strong>：有水能从不是起点的地方流到自己那里去（比如起点在8,8到5有路，5到3有路，那么8，5，3都有水）</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,h[<span class="number">500</span>],road[<span class="number">500</span>][<span class="number">500</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) cin &gt;&gt; h[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; m;i++){</span><br><span class="line">		<span class="type">int</span> f,t;</span><br><span class="line">		cin &gt;&gt; f &gt;&gt; t;</span><br><span class="line">                <span class="comment">//高处？低处？</span></span><br><span class="line">		<span class="keyword">if</span>(h[f] &gt; h[t]) road[f][t] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(h[t] &gt; h[f]) road[t][f] = <span class="number">1</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++){</span><br><span class="line">		road[i][i] = <span class="number">1</span>;<span class="comment">//水在自己家</span></span><br><span class="line">		<span class="type">int</span> judge = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>;j &lt;= n;j++)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>;k &lt;= n;k++){</span><br><span class="line">				<span class="keyword">if</span>(road[k][j]){<span class="comment">//有路，则为1</span></span><br><span class="line">					judge++;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				}</span><br><span class="line">			}		</span><br><span class="line">		<span class="keyword">if</span>(judge == n){</span><br><span class="line">			cout &lt;&lt; <span class="string">"Oui, j'ai trouve la solution."</span> &lt;&lt; endl &lt;&lt; i;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		}</span><br><span class="line">		road[i][i] = <span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">	cout &lt;&lt; <span class="string">"Non"</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>算法竞赛</category>
       </categories>
@@ -361,17 +361,6 @@ import {initHBE} from "/js/plugins/hbe.js";
       </tags>
   </entry>
   <entry>
-    <title>CooooldWind_的小站-1.1.2更新日志</title>
-    <url>/2025_09_21_Update_Log_1_1_2/</url>
-    <content><![CDATA[<ul>
-<li>修复了<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.488ex;" xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></g></g></g></g></svg></mjx-container>渲染错误</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>我的小破站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CooooldWind_的小站-1.1.4更新日志</title>
     <url>/2024_03_10_Update_Log_1_1_4/</url>
     <content><![CDATA[<h3 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h3><p>本次更新无修复内容。</p>
@@ -383,6 +372,17 @@ import {initHBE} from "/js/plugins/hbe.js";
       <categories>
         <category>杂物箱</category>
       </categories>
+      <tags>
+        <tag>我的小破站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CooooldWind_的小站-1.1.2更新日志</title>
+    <url>/2025_09_21_Update_Log_1_1_2/</url>
+    <content><![CDATA[<ul>
+<li>修复了<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.488ex;" xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></g></g></g></g></svg></mjx-container>渲染错误</li>
+</ul>
+]]></content>
       <tags>
         <tag>我的小破站</tag>
       </tags>
